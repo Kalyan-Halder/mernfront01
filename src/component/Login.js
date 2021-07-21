@@ -52,7 +52,6 @@ const Login = () => {
             }
             else if (res.status === 200) {
                 const user = await res.json();
-                console.log(user);
                 // const cookies = new Cookies();
                 // cookies.set('jwtoken', user,{
                 //         path: '/',
