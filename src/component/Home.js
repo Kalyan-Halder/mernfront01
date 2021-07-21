@@ -28,7 +28,8 @@ const Home = () => {
             setData({name:user.name,greet:"Welcome Back",link:"/user"});    
          }
 
-         }catch(err){
+         }catch(err){ 
+             
              console.log(err);
          }
     }
