@@ -1,11 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState,useContext} from 'react';
 import "../index.css";
 import { NavLink } from "react-router-dom";
+import {UserContext} from "../App";
 
 
 
 const Home = () => {
     const[data,setData]=useState({name:"",greet:"",link:"",direct:""});
+    const{state,dispatch} = useContext(UserContext);
     const getData = async()=>{
          const token = localStorage.getItem("jwtoken");
 
@@ -25,6 +27,7 @@ const Home = () => {
             }
             else if(res.status === 200){
             const user = await res.json();
+            dispatch({type:"USER",payload:true});
             setData({name:user.name,greet:"Welcome Back",link:"/user"});    
          }
 
