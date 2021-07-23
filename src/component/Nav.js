@@ -30,7 +30,7 @@ const Nav = () => {
                     <NavLink activeClassName="active" className="navlinks" to="/logout"><div className="nav_icon"><BiLogOut size="1.3rem"/> Logout </div></NavLink>
             </>);
         }
-        else{
+        else if(!state){
             return(<>
                     <NavLink exact activeClassName="active" className="navlinks" to="/"><div className="nav_icon"><FaHome size="1.2rem" />Home</div></NavLink>
                     <NavLink activeClassName="active" className="navlinks" to="/signup"><div className="nav_icon"><FaUserPlus size="1.2rem"/> Signup </div></NavLink>
