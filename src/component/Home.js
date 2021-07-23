@@ -45,7 +45,7 @@ const Home = () => {
         <>
            <div className="homediv">
               <h1>Hello {data.name}</h1>
-              <p style={{color: "white"}}>{data.greet}</p>
+              <p className="homePara" style={{color: "white"}}>{data.greet}</p>
               <NavLink className="redirect2" to={data.link}>Get Started</NavLink>
            </div>
         </>
