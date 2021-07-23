@@ -45,8 +45,8 @@ p {
   padding: 0 20px 0 20px;
   display: grid;
   grid-template-columns: 5fr 2fr;
+  grid-gap: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  border: ;
 }
 .navlinks {
   text-decoration: none;
