@@ -1,6 +1,8 @@
-import React from 'react';
+import React,{useContext} from 'react';
 import { useEffect } from 'react';
 import { NavLink } from "react-router-dom";
+import {UserContext} from "../App"
+ 
 
 const getData = ()=>{
     localStorage.removeItem("jwtoken");
@@ -8,7 +10,9 @@ const getData = ()=>{
 
 
 const Logout = () => {
+    const{state,dispatch} = useContext(UserContext);
     useEffect(()=>{
+        dispatch({type:"USER",payload:false});
         getData();
     },[]);
      

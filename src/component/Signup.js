@@ -10,8 +10,13 @@ import { HiOutlinePhone } from "react-icons/hi";
 import { RiLockPasswordLine } from "react-icons/ri";
 import sign_img from "../img/signup.svg";
 
+//context api and reducer function
+ 
 
 const Signup = () => {
+    
+    
+
     const history = useHistory();
     const [data, setData] = useState({
         name: "",
@@ -52,6 +57,7 @@ const Signup = () => {
                  }); 
             }
             else if(res.status === 200){
+                 
                  window.alert(`Data Submitted \nYou can Login Now!!!`);
                  history.push("/login");
                  

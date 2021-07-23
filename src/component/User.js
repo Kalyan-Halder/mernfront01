@@ -5,7 +5,6 @@ import { NavLink } from "react-router-dom";
 import { BsFillPersonFill } from "react-icons/bs";
 import {HiOutlineMailOpen} from 'react-icons/hi';
 import { HiOutlinePhone } from "react-icons/hi";
-import { BiLogOut } from "react-icons/bi";
 import { FaHome } from "react-icons/fa";
 import { FaSignInAlt } from "react-icons/fa";
 
@@ -79,7 +78,6 @@ const User = () => {
                               <div className="redirects">
                                    <NavLink className="redirect2" to="/home"><div className="nav_icon"><FaHome size="1.2rem" />Home</div></NavLink>
                                    <NavLink className="redirect2" to="/login"><div className="nav_icon"><FaSignInAlt size="1.2rem"/> Login </div></NavLink>
-                                   <NavLink className="redirect2" to="/logout"><div className="nav_icon"><BiLogOut size="1.3rem"/> Logout </div></NavLink>   
                              </div>
                      </div>
                 </div>

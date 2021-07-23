@@ -8,17 +8,24 @@ import Nav from "./component/Nav";
 import Footer from './component/Footer';
 import User from './component/User';
 import Contact from "./component/Contact";
- 
-
-
 import "./index.css";
 
-
 import { Switch, Route } from "react-router-dom";
+import { createContext,useContext } from 'react';
+import { useReducer } from 'react';
+import { initial,reducer } from './reducer/useReducer';
 
+
+
+const UserContext = createContext();
 function App() {
+  
+  const[state,dispatch] = useReducer(reducer,initial);
+
   return (
     <div className="wrapper">
+      
+      <UserContext.Provider value={{state,dispatch}}>
       <Nav />
       <Switch>
         <Route exact path="/" component={Home}></Route>
@@ -31,8 +38,11 @@ function App() {
         <Route path="" component={Error}></Route>
       </Switch>
       <Footer/>
+      </UserContext.Provider>
+     
     </div>
   );
 }
 
 export default App;
+export {UserContext};

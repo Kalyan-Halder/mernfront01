@@ -8,7 +8,7 @@ const Home = () => {
     const[data,setData]=useState({name:"",greet:"",link:"",direct:""});
     const getData = async()=>{
          const token = localStorage.getItem("jwtoken");
-          
+
          try{
              
                 const res = await fetch("https://mernback01.herokuapp.com/home", {

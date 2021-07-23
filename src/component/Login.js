@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState,useContext} from 'react';
 import { NavLink } from "react-router-dom";
 import { useHistory } from 'react-router';
-
+ 
 // import Cookies from 'universal-cookie';
 
 
 import "../index.css";
 import log_img from "../img/login.svg";
-
+import {UserContext} from "../App";
 
 
 
@@ -16,6 +16,9 @@ import { HiOutlineMailOpen } from 'react-icons/hi';
 import { RiLockPasswordLine } from "react-icons/ri";
 
 const Login = () => {
+    const{state,dispatch} = useContext(UserContext);
+    console.log(state,dispatch);
+   
 
     const history = useHistory();
     const [data, setData] = useState({
@@ -58,6 +61,7 @@ const Login = () => {
                 //         maxAge:1000*60,
                          
                 //      });
+                dispatch({type:"USER",payload:true});
                 localStorage.setItem("jwtoken",user);
 
                 window.alert("Login Successful");
