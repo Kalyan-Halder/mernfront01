@@ -44,7 +44,7 @@ p {
 .topbar {
   padding: 0 20px 0 20px;
   display: grid;
-  grid-template-columns: 9fr 3fr;
+  grid-template-columns: 2fr 1fr;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .navlinks {
