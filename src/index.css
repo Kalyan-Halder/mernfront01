@@ -51,6 +51,7 @@ p {
   text-decoration: none;
   font-size: 1.4rem;
   color: rgb(184, 181, 181);
+  font-weight: bold;
 }
 .active {
   color: rgb(0, 0, 0);
