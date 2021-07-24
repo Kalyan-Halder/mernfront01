@@ -353,7 +353,7 @@ input:focus {
 }
 @media screen and (max-width: 362px) {
   .homediv h1 {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .homePara {
     font-size: 1.1rem;
@@ -393,9 +393,12 @@ input:focus {
     font-size: 1rem;
   }
 }
-@media screen and (max-width: 233px) {
+@media screen and (max-width: 240px) {
   .redirect2 {
     padding: 0;
     margin: 10px 0 0 0;
+  }
+  .homediv h1 {
+    font-size: 0.8rem;
   }
 }
