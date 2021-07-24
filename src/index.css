@@ -383,7 +383,7 @@ input:focus {
     text-align: center;
   }
   .redirects {
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .logo_inner h1 {
@@ -391,5 +391,11 @@ input:focus {
   }
   .footer p {
     font-size: 1rem;
+  }
+}
+@media screen and (max-width: 233px) {
+  .redirect2 {
+    padding: 0;
+    margin: 10px 0 0 0;
   }
 }
