@@ -7,7 +7,7 @@ import { FaSignInAlt } from "react-icons/fa";
 import { FaUserPlus } from "react-icons/fa";
 import { FaUserAlt } from "react-icons/fa";
 import { MdPermContactCalendar } from "react-icons/md";
-import { BiLogOut } from "react-icons/bi";
+
 
 import {UserContext} from '../App';
 
@@ -27,7 +27,7 @@ const Nav = () => {
                     <NavLink exact activeClassName="active" className="navlinks" to="/"><div className="nav_icon"><FaHome size="1.2rem" />Home</div></NavLink>
                     <NavLink activeClassName="active" className="navlinks" to="/user"><div className="nav_icon"><FaUserAlt size=".9rem"/> Profile </div></NavLink>
                     <NavLink activeClassName="active" className="navlinks" to="/contact"><div className="nav_icon"><MdPermContactCalendar size="1.3rem"/> Contact </div></NavLink>
-                    <NavLink activeClassName="active" className="navlinks" to="/logout"><div className="nav_icon"><BiLogOut size="1.3rem"/> Logout </div></NavLink>
+                   
             </>);
         }
         else if(!state){

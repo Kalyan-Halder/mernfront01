@@ -77,7 +77,7 @@ const User = () => {
                               </div>
                               <div className="redirects">
                                    <NavLink className="redirect2" to="/home"><div className="nav_icon"><FaHome size="1.2rem" />Home</div></NavLink>
-                                   <NavLink className="redirects2" to="/logout"><div className="nav_icon"><BiLogOut size="1.3rem"/> Logout </div></NavLink>
+                                   <NavLink className="redirect2" to="/logout"><div className="nav_icon"><BiLogOut size="1.3rem"/> Logout </div></NavLink>
                              </div>
                      </div>
                 </div>
